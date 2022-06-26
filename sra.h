@@ -7,5 +7,5 @@
 #include <unistd.h>
 
 int isprimer(int n);
-void factoriser(unsigned long long int n);
+void factoriser(long int n);
 #endif /* _RSA_H*/

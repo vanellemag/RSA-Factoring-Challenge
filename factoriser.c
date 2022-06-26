@@ -23,16 +23,16 @@ int isprimer(int n)
  * @n: int
  *
  */
-void factoriser(unsigned long long int n)
+void factoriser(long int n)
 {
-	unsigned long long int p = 1;
-	unsigned long long int q;
-	unsigned long long int max = 1;
+	long int p = 1;
+	long int q;
+	long int max = 1;
 
 	if (isprimer(n) == 1)
 	{
 		q = n;
-		printf("%lli = %lli * %lli\n", n, p, q);
+		printf("%lu = %lu * %lu\n", n, p, q);
 	}
 	else
 	{
@@ -47,6 +47,6 @@ void factoriser(unsigned long long int n)
 		}
 		p = max;
 		q = n / max;
-		printf("%lli = %lli * %lli\n", n, p, q);
+		printf("%lu = %lu * %lu\n", n, p, q);
 	}
 }

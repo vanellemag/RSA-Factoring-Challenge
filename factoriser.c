@@ -8,6 +8,7 @@ int isprimer(int n)
 {
 	int j;
 	int prim = 1;
+	/*int sq = pow(n, 0.5);*/
 
 	for (j = 2; j < n; j++)
 	{
